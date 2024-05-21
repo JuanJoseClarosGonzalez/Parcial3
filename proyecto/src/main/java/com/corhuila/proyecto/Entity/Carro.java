@@ -24,16 +24,12 @@ public class Carro {
     private Categoria categoriaId;
 
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "id", nullable = false)
-    private Categoria usuarioId;
-    public Long getId() {
+    @JoinColumn(name = "usuario_id", nullable = false)
+    private Usuario usuarioId;
+
+  public Long getId() {
         return id;
-    }
-
-    public Long getId() {
-    return id;
   }
-
   public void setId(Long id) {
     this.id = id;
   }
